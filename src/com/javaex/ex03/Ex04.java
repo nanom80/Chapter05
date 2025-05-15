@@ -66,7 +66,11 @@ public class Ex04 {
         System.out.println();
         
         
-        BufferedReader brCopy = new BufferedReader(new InputStreamReader(new FileInputStream("C:\\javaStudy\\PhoneDB_copy.txt"), "MS949"));
+        // 읽기 스트림 준비
+        InputStream inCopy = new FileInputStream("C:\\javaStudy\\PhoneDB_copy.txt");
+        InputStreamReader isrCopy = new InputStreamReader(inCopy, "MS949");
+        BufferedReader brCopy = new BufferedReader(isrCopy);
+        
         System.out.println("------읽기 스트림 준비 완료------");
         while (true) {
             String str = brCopy.readLine();
