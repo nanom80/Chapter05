@@ -65,7 +65,6 @@ public class Ex04 {
         System.out.println("-----------스트림 닫기-----------");
         System.out.println();
         
-        
         // 읽기 스트림 준비
         InputStream inCopy = new FileInputStream("C:\\javaStudy\\PhoneDB_copy.txt");
         InputStreamReader isrCopy = new InputStreamReader(inCopy, "MS949");
